@@ -1,0 +1,16 @@
+source:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password_env: "SRC_DB_PASSWORD"
+  database: "prueba_ventas"
+
+destination:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password_env: "DST_DB_PASSWORD"
+  database: "dst_db"
+
+etl:
+  truncate_before_load: true
